@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Student Information</h1>
+    <form action="Data.php" method="post">
+        <label for="FirstName">First Name</label>
+        <input type="text" name="FName" id="FirstName"><br><br>
+
+        <label for="MiddleName">Middle Name</label>
+        <input type="text" name="MName" id="MiddleName"><br><br>
+
+        <label for="LastName">Last Name</label>
+        <input type="text" name="LName" id="LastName"><br><br>
+
+        <label for="MobNo">Mobile Number</label>
+        <input type="number" name="Mobile" id="MobNo"><br><br>
+
+        <label for="email">Email Id</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="Address">Student Address</label>
+        <textarea name="SAddress" id="Address" cols="5" rows="5">
+        </textarea><br><br>
+
+        <label>Gender</label><br><br>
+
+        <input type="radio" id="SMale" name="Gender" value="Male">
+        <label for="SMale">Male</label>
+       
+        <input type="radio" id="SFemale" name="Gender" value="Female">
+        <label for="SFemale">Female</label>
+       
+        <input type="radio" id="SOther" name="Gender" value="Other">
+        <label for="SOther">Other</label><br><br>
+        
+        <label for="State">Select Your State</label><br>
+        <select name="SState" id="State">
+            <option value="None">-- Select State --</option>
+            <option value="Goa">Goa</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="UP">UP</option>
+            <option value="MP">MP</option>
+        </select>
+        
+        <label>Select Your Languages</label><br><br>
+
+        <label for="Languages01">C Languages</label>
+        <input type="checkbox" id="Languages01" name="Lang" value="C">
+
+        <label for="Languages02">CPP Languages</label>
+        <input type="checkbox" id="Languages02" name="Lang" value="CPP">
+
+        <label for="Languages03">Web Design</label>
+        <input type="checkbox" id="Languages03" name="Lang" value="Web"><br><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
